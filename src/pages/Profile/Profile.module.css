@@ -1,0 +1,142 @@
+.Profile {
+    margin: 50px auto;
+    padding: 10px 16px;
+    width: 90%;
+    display: block;
+    background-color: rgba(246, 255, 254, 0.7);
+    border-radius: 15px;
+
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.ProfilePhoto {
+    position: relative;
+}
+
+.Body {
+    margin: 0px;
+    padding: 8px;
+    color: rgb(28,41,86);
+    font-weight: initial;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.Photo {
+    /*position: relative;*/
+    flex: 1;
+}
+
+.Info {
+    flex: 3;
+    display: flex;
+    flex-flow: column;
+}
+
+.Password {
+    text-align: center;
+}
+
+@media (min-width: 740px) {
+    .Profile {
+        width: 70%;
+    }
+    /*.Profile {*/
+    /*    margin: 50px auto;*/
+    /*    padding: 10px 16px;*/
+    /*    width: 50%;*/
+    /*    display: block;*/
+    /*    background-color: rgba(246, 255, 254, 0.7);*/
+    /*    border-radius: 15px;*/
+
+    /*    box-shadow:*/
+    /*            0 2.8px 2.2px rgba(0, 0, 0, 0.034),*/
+    /*            0 6.7px 5.3px rgba(0, 0, 0, 0.048),*/
+    /*            0 12.5px 10px rgba(0, 0, 0, 0.06),*/
+    /*            0 22.3px 17.9px rgba(0, 0, 0, 0.072),*/
+    /*            0 41.8px 33.4px rgba(0, 0, 0, 0.086),*/
+    /*            0 100px 80px rgba(0, 0, 0, 0.12)*/
+    /*}*/
+
+    /*.Body {*/
+    /*    margin: 0px;*/
+    /*    padding: 8px;*/
+    /*    color: rgb(28,41,86);*/
+    /*    font-weight: initial;*/
+    /*    text-align: center;*/
+    /*    display: flex;*/
+    /*    flex-flow: column;*/
+    /*}*/
+
+    /*.Photo {*/
+    /*    flex: 1;*/
+    /*}*/
+
+    /*.Info {*/
+    /*    flex: 3;*/
+    /*    display: flex;*/
+    /*    flex-flow: column;*/
+    /*}*/
+
+    /*.Password {*/
+    /*    text-align: center;*/
+    /*}*/
+}
+
+@media (min-width: 1000px) {
+    .Profile {
+        width: 50%;
+    }
+    /*.Profile {*/
+    /*    margin: 50px auto;*/
+    /*    padding: 10px 16px;*/
+    /*    width: 50%;*/
+    /*    display: block;*/
+    /*    background-color: rgba(246, 255, 254, 0.7);*/
+    /*    border-radius: 15px;*/
+
+    /*    box-shadow:*/
+    /*            0 2.8px 2.2px rgba(0, 0, 0, 0.034),*/
+    /*            0 6.7px 5.3px rgba(0, 0, 0, 0.048),*/
+    /*            0 12.5px 10px rgba(0, 0, 0, 0.06),*/
+    /*            0 22.3px 17.9px rgba(0, 0, 0, 0.072),*/
+    /*            0 41.8px 33.4px rgba(0, 0, 0, 0.086),*/
+    /*            0 100px 80px rgba(0, 0, 0, 0.12)*/
+    /*}*/
+
+    /*.Body {*/
+    /*    margin: 0px;*/
+    /*    padding: 8px;*/
+    /*    color: rgb(28,41,86);*/
+    /*    font-weight: initial;*/
+    /*    text-align: center;*/
+    /*    display: flex;*/
+    /*    flex-flow: row;*/
+    /*}*/
+
+    /*.Photo {*/
+    /*    position: relative;*/
+    /*    flex: 1;*/
+    /*}*/
+
+    /*.Info {*/
+    /*    flex: 3;*/
+    /*    display: flex;*/
+    /*    flex-flow: column;*/
+    /*}*/
+
+    /*.Password {*/
+    /*    text-align: center;*/
+    /*}*/
+
+    .Body {
+        flex-flow: row;
+    }
+}

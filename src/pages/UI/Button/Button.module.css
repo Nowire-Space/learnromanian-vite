@@ -1,0 +1,53 @@
+.Button {
+    width: 100%;
+    height: 50px;
+    padding: 8px 16px;
+    margin: 0px 0;
+    font-size: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 4px;
+
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+}
+
+.Regular:disabled {
+    background-color: rgba(36, 55, 122, 0.5);
+    cursor: not-allowed;
+}
+
+.Important:disabled {
+    background-color: rgba(178, 32, 40, 0.2);
+    cursor: not-allowed;
+}
+
+.Regular {
+    color: white;
+    background-color: #24377A;
+}
+
+.Important {
+    color: white;
+    background-color: rgb(178,32,40);
+}
+
+.Floating {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    background-color: lightgray;
+
+}
+
+.Half {
+    width: 50%;
+}

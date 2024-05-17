@@ -1,0 +1,53 @@
+.Toolbar {
+    height: 84px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #D021290A;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+.DrawerToggle {
+    text-align: center;
+    flex: 1;
+}
+
+.Logo {
+    height: 80%;
+    flex: 2;
+}
+
+.DesktopOnly {
+    text-align: center;
+    display: none;
+    flex: 1;
+}
+
+.RightSide {
+    flex: 1;
+}
+
+@media (min-width: 740px) {
+    .DrawerToggle {
+        display: none;
+    }
+    .RightSide {
+        display: none;
+    }
+    .Logo {
+        flex: 1;
+    }
+    .DesktopOnly {
+        display: block;
+    }
+}

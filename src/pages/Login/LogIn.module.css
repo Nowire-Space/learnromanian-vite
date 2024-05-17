@@ -1,0 +1,70 @@
+.LogIn {
+    padding: 50px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.Title {
+    margin-bottom: 36px;
+}
+
+.Inputs {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.Error {
+    text-align: center;
+}
+
+.Error p {
+    color: #d02129;
+}
+
+.Links {
+    margin: 24px 0 24px 0;
+    overflow: auto;
+
+    font-weight: bold;
+    color: #24377A;
+}
+
+.Links input {
+    margin: 0 4px 0 0;
+    border-radius: 10px;
+    border: 3px solid #24377A;
+    color: #24377A;
+}
+
+.Left {
+    float: left;
+}
+
+.Right {
+    float: right;
+}
+
+.Stick {
+    animation: show-warn 1s forwards;
+}
+
+.warn-anim-in {
+    animation: show-warn 1s forwards;
+}
+
+.warn-anim-out {
+    animation: show-warn 1s reverse;
+}
+
+@keyframes show-warn {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

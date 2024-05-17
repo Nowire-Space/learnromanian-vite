@@ -1,0 +1,16 @@
+.Link {
+    width: 100%;
+    color: #24377A;
+    transition: all 0.35s ease;
+    text-decoration: none;
+}
+
+.Link:hover {
+    /*border-bottom: 1px rgb(28,41,86);*/
+    text-decoration: underline;
+}
+
+
+/*.Right {*/
+/*    float: right;*/
+/*}*/

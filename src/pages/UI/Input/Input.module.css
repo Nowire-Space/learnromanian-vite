@@ -1,0 +1,135 @@
+/*Input:hover {*/
+/*    box-shadow: 0 0 15px rgb(178,32,40);*/
+/*    border: 1px solid rgb(178,32,40);*/
+/*    transform: scale(1.05) perspective(1px)*/
+/*}*/
+
+.Select {
+    display: inline-block;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #8083A3;
+
+    width: 100%;
+    margin: 0;
+    padding: 16px 0;
+
+    border: none;
+    border-bottom: 1px solid #ECEEF5;
+
+    position: relative;
+    background: transparent;
+}
+
+.Select option {
+    display: inline-block;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A1C1D;
+
+    width: 100%;
+    margin: 0;
+    padding: 16px 0;
+
+    border: none;
+
+    position: relative;
+    background: white;
+}
+
+/*.select-items div,.select-selected {*/
+/*    color: #ffffff;*/
+/*    padding: 8px 16px;*/
+/*    border: 1px solid transparent;*/
+/*    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.Select label {
+    font-size: 14px;
+    font-weight: normal;
+    color: #8083A3;
+}
+
+/*.Invalid {*/
+/*    box-shadow: 0 0 15px rgb(178,32,40);*/
+/*    border: 1px solid rgb(178,32,40);*/
+/*    background-color: rgba(178, 32, 40, 0.2);*/
+/*}*/
+
+.Invalid::placeholder {
+    color: rgb(178, 32, 40);
+}
+
+.LabeledInput {
+    margin: 10px 0;
+}
+
+.LabeledInput label {
+    font-size: 14px;
+    font-weight: normal;
+    color: #8083A3;
+}
+
+.LabeledInput input {
+    display: inline-block;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A1C1D;
+
+    width: 100%;
+    margin: 0;
+    padding: 16px 0;
+
+    border: none;
+    border-bottom: 1px solid #ECEEF5;
+
+    position: relative;
+    background: transparent;
+}
+
+.LabeledInput input:focus {
+    outline: none;
+}
+
+.LabeledInput select:focus {
+    outline: none;
+}
+
+.LabeledInput input::placeholder {
+    color: #8083A3;
+}
+
+.IconInput {
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.LabeledInput .IconInput i {
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    right: 0;
+    font-size: large;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.HalfSize {
+    width: 50%;
+}
+
+.Error {
+    text-align: center;
+}
+
+.Error p {
+    color: #d02129;
+}
