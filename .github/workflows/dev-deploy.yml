@@ -1,0 +1,21 @@
+name: Dev Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["develop"]
+
+jobs:
+  run_tests:
+    name: Run automated tests
+    runs-on: self-hosted
+
+    steps:
+      - name: Run build and copy files to DocumentRoot
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.ROOT_USERNAME }}
+          password: ${{ secrets.ROOT_PASSWORD }}
+          port: ${{ secrets.HOST_PORT }}
+          script: rm -r /home/deployer/deployment/vite/learnromanian-vite && cd /home/deployer/deployment/vite/ && git clone -b develop --single-branch https://github.com/Nowire-Space/learnromanian-vite.git && cd learnromanian-vite && npm i && npm run build && rm -r /var/www/test.learnromanian.nowire.space/public_html/* && cd dist/ && cp -a . /var/www/test.learnromanian.nowire.space/public_html/
