@@ -84,7 +84,7 @@ const LogIn = () => {
     return (
         <div className={classes.LogIn}>
             <div className={classes.Title}>
-                <Title>Welcome!</Title>
+                <Title>Welcome here!</Title>
                 <Title>Please log in to get started.</Title>
             </div>
             <form onSubmit={(event) => logInHandler(event)}>
