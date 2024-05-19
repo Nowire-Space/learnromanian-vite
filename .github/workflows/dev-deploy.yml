@@ -8,6 +8,7 @@ on:
 jobs:
   run_deploy:
     name: Run Dev Deploy
+    environment: DEV
     runs-on: self-hosted
 
     steps:
@@ -18,4 +19,4 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_HOST_PORT }}
-          script: source ~/.nvm/nvm.sh && nvm use 20.13.1 && rm -r /home/deployer/deployment/vite/learnromanian-vite && cd /home/deployer/deployment/vite/ && git clone -b develop --single-branch https://github.com/Nowire-Space/learnromanian-vite.git && cd learnromanian-vite && npm i && VITE_API_URI=${{ secrets.API_URL }} npm run build && rm -r /var/www/test.learnromanian.nowire.space/public_html/* && cd dist/ && cp -a . /var/www/test.learnromanian.nowire.space/public_html/
+          script: source ~/.nvm/nvm.sh && nvm use 20.13.1 && rm -r /home/deployer/deployment/vite/learnromanian-vite && cd /home/deployer/deployment/vite/ && git clone -b develop --single-branch https://github.com/Nowire-Space/learnromanian-vite.git && cd learnromanian-vite && npm i && VITE_API_URI=${{ secrets.API_URL }} VITE_APP_VERSION=${{ vars.APP_VERSION }} npm run build && rm -r /var/www/test.learnromanian.nowire.space/public_html/* && cd dist/ && cp -a . /var/www/test.learnromanian.nowire.space/public_html/
