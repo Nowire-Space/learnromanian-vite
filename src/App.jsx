@@ -21,7 +21,7 @@ function App() {
     return (
         <div className={classes.App}>
             <AuthProvider>
-                <BrowserRouter>
+                <BrowserRouter basename="/">
                     <Toolbar/>
                     <div className={classes.Container}>
                         <main className={classes.Content}>
