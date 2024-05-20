@@ -7,7 +7,7 @@ import Link from '../UI/Link/Link.jsx';
 import {FaPen} from "react-icons/fa";
 import classes from './LogIn.module.css';
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useAuth} from "../../provider/authProvider.jsx";
 
@@ -80,6 +80,13 @@ const LogIn = () => {
         }
         return valid;
     }
+
+    useEffect(() => {
+        // data fetching here
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
+            .then(response => response.json())
+            .then(data => console.log(data));
+    }, []);
 
     return (
         <div className={classes.LogIn}>
