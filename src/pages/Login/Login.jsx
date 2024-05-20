@@ -81,13 +81,6 @@ const LogIn = () => {
         return valid;
     }
 
-    useEffect(() => {
-        // data fetching here
-        fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
-            .then(response => response.json())
-            .then(data => console.log(data));
-    }, []);
-
     return (
         <div className={classes.LogIn}>
             <div className={classes.Title}>
