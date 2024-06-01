@@ -2,7 +2,7 @@ import Title from '../UI/Title/Title';
 import classes from './About.module.css';
 
 const About = () => {
-    return(
+    return (
         <div className={classes.About}>
             <Title>Despre noi</Title>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -16,8 +16,8 @@ const About = () => {
             Nam sit amet facilisis mi. Suspendisse sit amet leo eget turpis molestie vehicula.
             Suspendisse orci ipsum, mattis quis pellentesque ac, vestibulum nec justo.
             Sed tempor nec eros.
-        </div>
-    );
+            <p>v {import.meta.env.VITE_APP_VERSION}</p>
+        </div>);
 };
 
 export default About;

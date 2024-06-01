@@ -7,7 +7,7 @@ import Link from '../UI/Link/Link.jsx';
 import {FaPen} from "react-icons/fa";
 import classes from './LogIn.module.css';
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useAuth} from "../../provider/authProvider.jsx";
 
@@ -84,7 +84,7 @@ const LogIn = () => {
     return (
         <div className={classes.LogIn}>
             <div className={classes.Title}>
-                <Title>Welcome!</Title>
+                <Title>Welcome here!</Title>
                 <Title>Please log in to get started.</Title>
             </div>
             <form onSubmit={(event) => logInHandler(event)}>
